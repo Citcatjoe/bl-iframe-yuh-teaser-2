@@ -1,0 +1,21 @@
+{
+	"title": "Iframe Yuh teaser money",
+	"titlesocial": "Iframe Yuh teaser money",
+	"description": "Iframe Yuh teaser money",
+	"authors": {
+		"photos": "Fournies par Nespresso",
+		"videos": "Fournies par Nespresso",
+		"writer": false,
+		"dev": "César Greppin"
+	},
+	"imgSocial": "social.jpg",
+	"headertheme": "trans", 
+	"blickWhite": false,
+	"blickBlack": true,
+	"headerBoxed": false,
+	"pubDate": "2020-07-23T11:00:00+00:00",
+	"partner": {
+		"logo": "img/empty.png",
+		"link": "https://www.blick.ch/"
+	}
+}
