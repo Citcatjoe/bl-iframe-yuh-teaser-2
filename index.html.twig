@@ -21,7 +21,7 @@
 	<body class="bg-white h-full"> 
 		
 		<!-- {{ block('loading_overlay') }} -->
-		{{ block('gtm') }}
+	
 		
 		{# block('header') #} 
 		{{ block('menu_overlay') }}
@@ -50,20 +50,29 @@
 		</div> #}
 		{# ------------------------------------------------------------------------ #}
 		
-		<a href="https://www.blick.ch/fr/news/economie/">
+		<a href="https://www.blick.ch/fr/news/economie/" target="_parent">
 			<div class="yuh flex bg-gray-200 overflow-hidden relative">
-				<div class="absolute max-w-sm top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 z-10">
+				<div class="absolute max-w-sm left-10 bottom-3/5 translate-y-1/2 md:bottom-6 md:translate-y-0 z-10">
 					<h1>Money</h1>
-					<span class="subtitle">Apprenez à gérer votre argent et à tout comprendre à l’économie et aux cryptos grâce à nos articles Money</span>
+					<h2 class="subtitle">Apprenez à gérer votre argent et à tout comprendre à l’économie et aux cryptos grâce à nos articles Money</h2>
 				</div>
-				<img src="img/this/logos.png" alt="" class="logos absolute top-3 left-3">
+				<span class="red-line absolute"></span>
+				<img src="img/blick.svg" alt="" class="logo-blick-2 absolute">
+				<img src="img/this/wave.png" alt="" class="logo-yuh-bg-rose absolute mobile-hidden">
+				<img src="img/this/wave-mobile.png" alt="" class="logo-yuh-bg-rose-mobile absolute desktop-hidden">
+				<img src="img/this/yuh.svg" alt="" class="logo-yuh-rose absolute">
+				
+				<span class="absolute txt txt-present">vous présente sa rubrique</span>
+				<span class="absolute txt txt-partner">En partenariat avec</span>
+				<!-- <span class="absolute txt txt-partner desktop-hidden">Partenaire</span> -->
+				{# <img src="img/this/logos.png" alt="" class="logos absolute top-3 left-3">
 				<img src="img/this/circle-1.svg" alt="" class="circle-1 absolute top-1/2 left-1/2 -translate-x-1/2">
 				<img src="img/this/circle-2.svg" alt="" class="circle-2 absolute">
 				<img src="img/this/circle-3.svg" alt="" class="circle-3 absolute">
 				<img src="img/this/circle-a.svg" alt="" class="circle-a absolute">
 				<img src="img/this/circle-b.svg" alt="" class="circle-b absolute">
 				<img src="img/this/circle-c.svg" alt="" class="circle-c absolute">
-				<img src="img/this/circle-d.svg" alt="" class="circle-d absolute">
+				<img src="img/this/circle-d.svg" alt="" class="circle-d absolute"> #}
 			</div>
 		</a>
 

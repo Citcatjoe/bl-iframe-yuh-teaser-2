@@ -1,26 +1,4 @@
-@font-face {
-    font-family: 'GoodBlackItalic';
-    src: url(https://storytelling.blick.ch/infografik/resources/fonts/Good/GoodW05-BlackItalic.eot) format('eot');
-    src: local(☺︎), url(https://storytelling.blick.ch/infografik/resources/fonts/Good/GoodW05-BlackItalic.woff) format('woff');
-    src: local(☺︎), url(https://storytelling.blick.ch/infografik/resources/fonts/Good/GoodW05-BlackItalic.woff2) format('woff2');
-    src: local(☺︎), url(https://storytelling.blick.ch/infografik/resources/fonts/Good/GoodW05-BlackItalic.ttf) format('truetype');
-    font-display: swap;
-    font-style: italic;
-    font-weight: 800;
-    font-weight: bolder;
-    }
 
-@font-face {
-    font-family: 'GoodCondBold';
-    src: url(https://storytelling.blick.ch/infografik/resources/fonts/Good/GoodW05-CondBold.eot) format('eot');
-    src: local(☺︎), url(https://storytelling.blick.ch/infografik/resources/fonts/Good/GoodW05-CondBold.woff) format('woff');
-    src: local(☺︎), url(https://storytelling.blick.ch/infografik/resources/fonts/Good/GoodW05-CondBold.woff2) format('woff2');
-    src: local(☺︎), url(https://storytelling.blick.ch/infografik/resources/fonts/Good/GoodW05-CondBold.ttf) format('truetype');
-    font-display: swap;
-    font-style: normal;
-    font-weight: 600 700;
-    font-weight: bold;
-    }
 
 
 
@@ -39,50 +17,82 @@
 }
 
 
-h1
-{
-    font-family: 'GoodBlackItalic', 'Arial Narrow', Impact, sans-serif;
-font-style: italic;
-font-weight: bolder;
-    text-transform: uppercase;
-    text-align: center;
-    font-style: italic;
-    font-size: 81px !important;
-    line-height: 97px;
-    font-weight: bolder;
-    text-shadow: 5px 5px #B9CEDD !important;
 
-    &::before
-    {
+ 
 
-    }
-}
-
-.subtitle
-{
-    font-family: 'GoodCondBold', 'Arial Narrow', Impact, sans-serif;
-font-style: normal;
-font-weight: bold;
-    font-size: 22px;
-    line-height: 28px;
-    color: #6c6c6c;
-    //text-shadow: 0px 1px 6px #00000072;
-}
-
+ 
 .yuh
 {   
-    height: 400px;
-    background: linear-gradient(to bottom, #D2ECF7 0%, rgb(255, 255, 255) 55%, rgb(255, 255, 255) 100%);
+    height: 100%;
+    background: url('../img/this/bg-coins.png'), linear-gradient(320deg, #98CDF2 0%, #D9DAE5 100%);
+    background-size: 100%;
     border-radius: 0;
 
     @include breakpoint(min, medium) {
         width: 100%;
-        height: 308px;
-        //border: 1px solid rgb(214, 214, 214);
-        background: linear-gradient(to bottom, #D2ECF7 0%, rgb(255, 255, 255) 55%, rgb(255, 255, 255) 100%);
+        height: 100%;
+        background: url('../img/this/bg-coins.png'), linear-gradient(320deg, #98CDF2 0%, #D9DAE5 100%);
+        background-size: 100%;
+        
         border-radius: 8px;
-    }; 
+    }
     
+}
+
+.red-line
+{
+    width: 100%;
+    height: 5px;
+        background: #E20000;
+
+    @include breakpoint(min, medium) {
+        height: 5px;
+        background: #E20000;
+        width: 420px;
+    }
+}
+
+.logo-blick-2
+{
+    width: 90px;
+    height: auto;
+    top: 0;
+    left: 40px;
+}
+
+.logo-yuh-bg-rose
+{
+    width: auto !important;
+    height: 100% !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    // height: 308px !important;
+    // width: auto;
+    //box-shadow: -3px 0 30px black;
+
+    
+}
+
+.logo-yuh-bg-rose-mobile
+{
+    width: 200px;
+    bottom: -25px;
+    right: 0;
+}
+
+.logo-yuh-rose
+{
+    width: 100px;
+    height: auto;
+    right: 0;
+    bottom: -3px;
+
+    @include breakpoint(min, medium) {
+        width: 175px;
+        height: auto;
+        right: 0;
+        bottom: -4px;
+    }
 }
 
 .h-custom-yuh

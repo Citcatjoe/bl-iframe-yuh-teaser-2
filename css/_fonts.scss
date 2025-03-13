@@ -1,21 +1,89 @@
+@font-face {
+    font-family: 'GoodBlackItalic';
+    src: url(https://storytelling.blick.ch/infografik/resources/fonts/Good/GoodW05-BlackItalic.eot) format('eot');
+    src: local(☺︎), url(https://storytelling.blick.ch/infografik/resources/fonts/Good/GoodW05-BlackItalic.woff) format('woff');
+    src: local(☺︎), url(https://storytelling.blick.ch/infografik/resources/fonts/Good/GoodW05-BlackItalic.woff2) format('woff2');
+    src: local(☺︎), url(https://storytelling.blick.ch/infografik/resources/fonts/Good/GoodW05-BlackItalic.ttf) format('truetype');
+    font-display: swap;
+    font-style: italic;
+    font-weight: 800;
+    font-weight: bolder;
+    }
+
+    @font-face {
+        font-family: 'GoodBold';
+        src: url(https://storytelling.blick.ch/infografik/resources/fonts/Good/GoodW05-Bold.eot) format('eot');
+        src: local(☺︎), url(https://storytelling.blick.ch/infografik/resources/fonts/Good/GoodW05-Bold.woff) format('woff');
+        src: local(☺︎), url(https://storytelling.blick.ch/infografik/resources/fonts/Good/GoodW05-Bold.woff2) format('woff2');
+        src: local(☺︎), url(https://storytelling.blick.ch/infografik/resources/fonts/Good/GoodW05-Bold.ttf) format('truetype');
+        font-display: swap;
+        font-style: normal;
+        font-weight: 600 700;
+        font-weight: bold;
+        }
+
 h1
 {
-    font-family: Playfair Display;
-    //font-family: bebas neue;
-    //font-size: 100px !important;
-    line-height: .8;
+    font-family: 'GoodBlackItalic', 'Arial Narrow', Impact, sans-serif;
+    font-style: italic;
+    font-weight: bolder;
+    text-transform: uppercase;
+    //text-align: center;
+    font-style: italic;
+    font-size: 81px !important;
+    line-height: 97px;
+    font-weight: bolder;
+    text-shadow: 5px 5px #77B7E5 !important;
 
-    @include breakpoint(min, medium) {
-        //font-size: 200px !important;
-    };
+    // @include breakpoint(min, medium) {
+    //     font-size: 81px !important;
+    //     line-height: 97px;
+    // }
 }
 
 h2 
 {
-    font-family: Playfair Display;
-    font-weight: 300 ;
+    font-family: 'GoodBold', 'Arial Narrow', Impact, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px !important;
+    line-height: 26px;
+    color: black;
+    border-left: 8px solid #1374B7;
+    padding-left: 15px;
+    //text-shadow: 0px 1px 6px #00000072;
+
+    @include breakpoint(min, medium) {
+        font-size: 22px !important;
+    line-height: 28px;
+    }
 }
-.chapeau h2 {font-family: poppins;  }
+
+span.txt
+{
+    font-size: 12px;
+    font-family: 'Helvetica', 'Arial', sans-serif; 
+
+    
+
+    &.txt-present
+    {
+        top: 13px; 
+        left: 145px;
+    }
+
+    &.txt-partner
+    {
+        bottom: 10px;
+        right: 190px;
+        //opacity: 0.3;
+
+        @include breakpoint(min, medium) {
+            bottom: 10px;
+            right: 190px;
+        }
+    }
+}
 
 h3 
 {
